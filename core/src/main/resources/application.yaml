@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: eden
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+      # Springfox使用的路径匹配基于AntPathMatcher，Spring Boot 2.6.X使用的是PathPatternMatcher。防止Swagger报错。
