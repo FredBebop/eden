@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:~/Developer/IdeaProjects/eden/h2/h2_test
+    url: "jdbc:h2:~/Developer/IdeaProjects/eden/h2/h2_test;MODE=MYSQL;DATABASE_TO_LOWER=true;INIT=runscript from '~/Developer/IdeaProjects/eden/sql/init.sql'"
     username: root
     password: 123456
 
